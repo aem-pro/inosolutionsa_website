@@ -1,33 +1,417 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ino Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <section id="topbar" class="d-flex align-items-center">
+      <div
+        class="container d-flex justify-content-center justify-content-md-between"
+      >
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center ms-md-5"
+            ><span>+123456789</span></i
+          >
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter text-decoration-none text-reset m-2"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="#" class="facebook text-decoration-none text-reset m-2"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="instagram text-decoration-none text-reset m-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="linkedin text-decoration-none text-reset m-2"
+            ><i class="fab fa-linkedin-in fab"></i
+          ></a>
+        </div>
+      </div>
+    </section>
 
-<title>Ino Solutions</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/960.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/Copse_400.font.js"></script>
-<script type="text/javascript" src="js/Gabriola_400.font.js"></script>
-<script type="text/javascript">
-	Cufon.replace('h1', {fontFamily: 'Copse', hover:true})
-	Cufon.replace('p.info', {fontFamily: 'Gabriola', hover:true})
-</script>
-</head>
-<body>
-<div id="shim"></div>
-<div id="content">
-	<!--<h1 class="logo"><span class="one">Ino</span> <span class="two">Solutions</span></h1>-->
-	<h1 class="logo"><span class="two">Ino Solutions</span></h1>
-	<p class="info">Our website is coming soon ...<br>
-		<span>In the mean time connect with us with the information below</span>
-	</p>
-	<p class="links">
-		<a href="#" class="li">Linked In</a>
-		<a href="#" class="tw">Twitter</a>
-		<a href="#" class="fb">Facebook</a>
-	</p>
-</div>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand text-white ms-md-5 mb-2" href="/"
+            >Ino Solutions<span class="dot">.</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white m-1" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white m-1" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white m-1" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white m-1" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <!-- Hero Section -->
+    <div class="cover-img">
+      <img
+        src="images/cover8.jpg"
+        alt="Cover Image"
+        class="w-100"
+        style="height: 550px"
+      />
+      <div class="hero text-start">
+        <p class="h2 fw-bold">
+          Unlock Massive Cloud Cost Savings <br /><span class="name"
+            >- We Guarantee It</span
+          >
+        </p>
+        <br />
+        <p class="h5">
+          Struggling with spiraling cloud bills?<br />
+          Our FinOps experts will optimize your cloud spend, with no upfront
+          costs.
+        </p>
+      </div>
+    </div>
 
+    <!-- Services Section -->
+    <div
+      style="
+        background-image: url('images/service-bg6.jpg');
+        background-size: cover;
+      "
+      id="services"
+    >
+      <div class="container py-5">
+        <div class="col-md-12">
+          <p class="h1 mb-5 pt-5 text-center">Our Services</p>
+        </div>
+        <div class="row d-flex justify-content-around">
+          <div class="card col-md-5 shadow-lg service-card card_ser">
+            <div class="card_content text-white p-4">
+              <p class="h3 mb-4">Cloud Cost Optimization:</p>
+              <p class="h5">
+                Unlock Massive Cloud Cost Savings - We Guarantee It
+              </p>
+              <p>
+                Struggling with spiraling cloud bills? Our FinOps experts will
+                optimize your cloud spend, with no upfront costs.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-5 shadow-lg service-card card_ser">
+            <div class="card_content text-white p-4">
+              <p class="h3 mb-4">Cloud Managed Services:</p>
+              <p class="h5">
+                Take the Complexity Out of Cloud with Managed Services
+              </p>
+              <p>
+                Free your team to focus on innovation, not infrastructure. Our
+                cloud experts will handle the rest.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-5 shadow-lg service-card card_ser">
+            <div class="card_content text-white p-4">
+              <p class="h3 mb-4">DevOps Practice Services:</p>
+              <p class="h5">Transform Your Software Delivery with DevOps</p>
+              <p>
+                Accelerate innovation, improve reliability, and reduce costs
+                with our DevOps expertise.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-5 shadow-lg service-card card_ser">
+            <div class="card_content text-white p-4">
+              <p class="h3 mb-4">Cloud-Native Product Development:</p>
+              <p class="h5">
+                Build Faster, Scale Easier with Cloud-Native Development
+              </p>
+              <p>
+                Leverage the power of the cloud to create modern, resilient
+                applications that drive your business forward.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</body></html>
+    <!-- About  -->
+    <section class="py-3 py-md-5" id="about">
+      <div class="container">
+        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+          <div class="col-12 col-lg-6 col-xl-5">
+            <img
+              class="img-fluid rounded"
+              loading="lazy"
+              src="images/about-sm2.jpg"
+              alt="About 1"
+            />
+          </div>
+          <div class="col-12 col-lg-6 col-xl-7">
+            <div class="row justify-content-xl-center">
+              <div class="col-12 col-xl-11">
+                <h2 class="mb-3">Who Are We?</h2>
+                <p class="lead fs-4 text-secondary mb-3">
+                  We help businesses unlock massive cloud cost savings and
+                  optimize their cloud spend without any upfront costs.
+                </p>
+                <p class="mb-5">
+                  We aim to provide exceptional cloud services that drive
+                  business growth and operational efficiency. Our perspective is
+                  to deliver outstanding, captivating solutions that align with
+                  our clients' unique needs.
+                </p>
+                <div class="row gy-4 gy-md-0 gx-xxl-5X">
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex">
+                      <div class="me-4 text-primary">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-gear-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="h4 mb-3">Versatile Expertise</h2>
+                        <p class="text-secondary mb-0">
+                          We leverage our deep knowledge in cloud-native
+                          architectures and technologies to create modern,
+                          resilient applications that drive business success.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="d-flex">
+                      <div class="me-4 text-primary">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="32"
+                          height="32"
+                          fill="currentColor"
+                          class="bi bi-fire"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"
+                          />
+                        </svg>
+                      </div>
+                      <div>
+                        <h2 class="h4 mb-3">Innovation and Collaboration</h2>
+                        <p class="text-secondary mb-0">
+                          We believe in merging primary ideas with innovative
+                          solutions, fostering a collaborative environment that
+                          encourages continuous improvement.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team  -->
+    <section class="bg-light py-3 py-md-5 py-xl-8">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Our Team</h2>
+            <p class="text-secondary mb-5 text-center lead fs-4">
+              We are a group of innovative, experienced, and proficient teams.
+              You will love to collaborate with us.
+            </p>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-lg-0 gx-xxl-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-info shadow overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="images/Depositphotos_484354208_S.jpg"
+                    alt=""
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Flora Nyra</h4>
+                    <p class="text-secondary mb-0">Product Manager</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-info shadow overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="images/Depositphotos_484354208_S.jpg"
+                    alt=""
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Evander Mac</h4>
+                    <p class="text-secondary mb-0">Art Director</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-info shadow overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="images/Depositphotos_484354208_S.jpg"
+                    alt=""
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Taytum Elia</h4>
+                    <p class="text-secondary mb-0">Investment Planner</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-info shadow overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="images/Depositphotos_484354208_S.jpg"
+                    alt=""
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Wylder Elio</h4>
+                    <p class="text-secondary mb-0">Financial Analyst</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div
+      class="footer"
+      style="
+        background-image: url('images/footer-bg.jpg');
+        background-size: cover;
+        height: auto;
+        color: white;
+      "
+      id="contact"
+    >
+      <div
+        class="container h-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="row w-100 mt-5">
+          <!-- Contact Information -->
+          <div class="col-md-4 mb-3">
+            <h5>Contact Us</h5>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: +02123456789</p>
+            <p>Address: 1234 Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <!-- Navigation Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-white mb-2">About Us</a></li>
+              <li><a href="#services" class="text-white mb-2">Services</a></li>
+            </ul>
+          </div>
+          <!-- Social Media Links -->
+          <div class="col-md-4 mb-3">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="border-top border-light pt-3 col-md-12 pb-5">
+          &copy; 2024. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
