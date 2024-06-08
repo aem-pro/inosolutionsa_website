@@ -20,6 +20,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <script defer src="js/app.js"></script>
   </head>
   <body>
     <!-- Top Bar -->
@@ -97,7 +98,7 @@
         class="w-100"
         style="height: 550px"
       />
-      <div class="hero text-start">
+      <div class="hero text-start hidden">
         <p class="h2 fw-bold">
           Unlock Massive Cloud Cost Savings <br /><span class="name"
             >- We Guarantee It</span
@@ -120,12 +121,12 @@
       "
       id="services"
     >
-      <div class="container py-5">
-        <div class="col-md-12">
+      <div class="container py-5 ">
+        <div class="col-md-12 hidden">
           <p class="h1 mb-5 pt-5 text-center">Our Services</p>
         </div>
         <div class="row d-flex justify-content-around">
-          <div class="card col-md-5 shadow-lg service-card card_ser">
+          <div class="card col-md-5 shadow-lg service-card card_ser hidden">
             <div class="card_content text-white p-4">
               <p class="h3 mb-4">Cloud Cost Optimization:</p>
               <p class="h5">
@@ -137,7 +138,7 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-5 shadow-lg service-card card_ser">
+          <div class="card col-md-5 shadow-lg service-card card_ser hidden2">
             <div class="card_content text-white p-4">
               <p class="h3 mb-4">Cloud Managed Services:</p>
               <p class="h5">
@@ -149,7 +150,7 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-5 shadow-lg service-card card_ser">
+          <div class="card col-md-5 shadow-lg service-card card_ser hidden">
             <div class="card_content text-white p-4">
               <p class="h3 mb-4">DevOps Practice Services:</p>
               <p class="h5">Transform Your Software Delivery with DevOps</p>
@@ -159,7 +160,7 @@
               </p>
             </div>
           </div>
-          <div class="card col-md-5 shadow-lg service-card card_ser">
+          <div class="card col-md-5 shadow-lg service-card card_ser hidden2">
             <div class="card_content text-white p-4">
               <p class="h3 mb-4">Cloud-Native Product Development:</p>
               <p class="h5">
@@ -179,7 +180,7 @@
     <section class="py-3 py-md-5" id="about">
       <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-          <div class="col-12 col-lg-6 col-xl-5">
+          <div class="col-12 col-lg-6 col-xl-5 hidden">
             <img
               class="img-fluid rounded"
               loading="lazy"
@@ -187,7 +188,7 @@
               alt="About 1"
             />
           </div>
-          <div class="col-12 col-lg-6 col-xl-7">
+          <div class="col-12 col-lg-6 col-xl-7 hidden">
             <div class="row justify-content-xl-center">
               <div class="col-12 col-xl-11">
                 <h2 class="mb-3">Who Are We?</h2>
@@ -267,8 +268,8 @@
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 class="mb-4 display-5 text-center">Our Team</h2>
-            <p class="text-secondary mb-5 text-center lead fs-4">
+            <h2 class="mb-4 display-5 text-center hidden">Technologies</h2>
+            <p class="text-secondary mb-5 text-center lead fs-4 hidden">
               We are a group of innovative, experienced, and proficient teams.
               You will love to collaborate with us.
             </p>
@@ -276,92 +277,22 @@
           </div>
         </div>
       </div>
-
-      <div class="container overflow-hidden">
-        <div class="row gy-4 gy-lg-0 gx-xxl-5">
-          <div class="col-12 col-md-6 col-lg-3">
-            <div
-              class="card border-0 border-bottom border-info shadow overflow-hidden"
-            >
-              <div class="card-body p-0">
-                <figure class="m-0 p-0">
-                  <img
-                    class="img-fluid"
-                    loading="lazy"
-                    src="images/Depositphotos_484354208_S.jpg"
-                    alt=""
-                  />
-                  <figcaption class="m-0 p-4">
-                    <h4 class="mb-1">Flora Nyra</h4>
-                    <p class="text-secondary mb-0">Product Manager</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+    
+      <div class="container col-10 hidden">
+        <div class="row justify-content-center text-center">
+          <div class="col-6 col-md-3 mb-4">
+            <img src="images/gcp.png" class="rounded-circle " style="width: 150px; height: 150px; background-color: white;" alt="gcp" />
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div
-              class="card border-0 border-bottom border-info shadow overflow-hidden"
-            >
-              <div class="card-body p-0">
-                <figure class="m-0 p-0">
-                  <img
-                    class="img-fluid"
-                    loading="lazy"
-                    src="images/Depositphotos_484354208_S.jpg"
-                    alt=""
-                  />
-                  <figcaption class="m-0 p-4">
-                    <h4 class="mb-1">Evander Mac</h4>
-                    <p class="text-secondary mb-0">Art Director</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img src="images/aws.png" class="rounded-circle" style="width: 150px; height: 150px; background-color: white;" alt="aws" />
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div
-              class="card border-0 border-bottom border-info shadow overflow-hidden"
-            >
-              <div class="card-body p-0">
-                <figure class="m-0 p-0">
-                  <img
-                    class="img-fluid"
-                    loading="lazy"
-                    src="images/Depositphotos_484354208_S.jpg"
-                    alt=""
-                  />
-                  <figcaption class="m-0 p-4">
-                    <h4 class="mb-1">Taytum Elia</h4>
-                    <p class="text-secondary mb-0">Investment Planner</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div
-              class="card border-0 border-bottom border-info shadow overflow-hidden"
-            >
-              <div class="card-body p-0">
-                <figure class="m-0 p-0">
-                  <img
-                    class="img-fluid"
-                    loading="lazy"
-                    src="images/Depositphotos_484354208_S.jpg"
-                    alt=""
-                  />
-                  <figcaption class="m-0 p-4">
-                    <h4 class="mb-1">Wylder Elio</h4>
-                    <p class="text-secondary mb-0">Financial Analyst</p>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img src="images/azure.png" class="rounded-circle" style="width: 150px; height: 150px; background-color: white;" alt="azure" />
           </div>
         </div>
       </div>
     </section>
+    
     <!-- Footer -->
     <div
       class="footer"
